@@ -1,0 +1,61 @@
+* {
+	outline: red 1px solid;
+}
+body {
+	background-color: black;
+}
+
+.title {
+	background-color: blue;
+	margin: 10px;
+	height: 100px;
+	border-radius: 10px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 25px;
+	padding-top: 35px;
+	font-family: cursive;
+}
+
+.container {
+	background-color: navy;
+	height: 500px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.form {
+	width: 48%;
+	height: 97%;
+	float: left;
+	margin: 1%;
+}
+
+.add-item {
+	height: 30%;
+}
+
+.budget {
+	height: 30%;
+}
+
+.messages {
+	height: 40%;
+}
+
+.table {
+	width: 48%;
+	height: 97%;
+	float: left;
+	margin: 1%;
+}
+
+.list {
+	height: 85%;
+}
+
+.total {
+	height: 15%;
+}
