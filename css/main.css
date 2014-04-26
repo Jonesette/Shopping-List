@@ -17,6 +17,7 @@ h1 {
 	font-size: 25px;
 	padding-top: 35px;
 	font-family: cursive;
+	color: white;
 }
 
 .container {
@@ -27,7 +28,7 @@ h1 {
 }
 
 .form {
-	width: 48%;
+	width: 30%;
 	height: 97%;
 	float: left;
 	margin: 1%;
@@ -35,6 +36,10 @@ h1 {
 
 .add-item {
 	height: 30%;
+}
+
+.item-details {
+	text-align: center;
 }
 
 .budget {
@@ -46,7 +51,7 @@ h1 {
 }
 
 .table {
-	width: 48%;
+	width: 66%;
 	height: 97%;
 	float: left;
 	margin: 1%;

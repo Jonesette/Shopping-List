@@ -14,13 +14,126 @@
 </div>
 <div class="container">
 	<div class="form">
-		<div class="add-item"></div>
-		<div class="budget"></div>
-		<div class="messages"></div>
+		<div class="add-item">
+			<div class="input">
+				<form class="item-details">
+					<input class="description" type="text" name="Description" value="Description"><br>
+					Quantity: <input type="number" name="Quantity" step="any" min="0"><br>
+					Price: <input type="number" name="Price" step="any" min="0"><br>
+				</form>
+			</div>
+			<div class="submit">
+				<form>	
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+		<div class="budget">
+			<h2> Set a Budget for this Shopping Trip </h2>
+			<form>
+				Budget: <input type="number" name="Budget" step="any" min="0">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+
+		<div class="messages">
+			<div id="error">
+				<p>You have exceeded your budget!</p>
+			</div>
+			<div id="warning">
+				<p>Want anything else? You have not yet met your budget.</p>
+				</div>
+			<div id="success">
+				<p>Excellent! Let's go shopping.</p>
+			</div>
+			<div id="task-list">Send to Task List</div>
+		</div>
 	</div>
 	<div class="table">
-		<div class="list"></div>
-		<div class="total"></div>
+		<div class="list">
+			<table id="results">
+				<tr class="header">
+					<td>Include</td>
+					<td>Description</td>
+					<td>Quantity</td>
+					<td>Unit Price</td>
+					<td>Total</td>
+					<td>Controls</td>
+				</tr>
+				<tr>
+					<td>
+						<form>
+							<input type="checkbox" name="include" value="include">
+						</form>
+					</td>
+					<td>Item #1</td>
+					<td>1</td>
+					<td>$5.00</td>
+					<td>$5.00</td>
+					<td>
+						<form>
+							<input type="submit" value="Edit">
+							<input type="submit" value="Delete">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<form>
+							<input type="checkbox" name="include" value="include">
+						</form>
+					</td>
+					<td>Item #2</td>
+					<td>5</td>
+					<td>$3.50</td>
+					<td>$14.00</td>
+					<td>
+						<form>
+							<input type="submit" value="Edit">
+							<input type="submit" value="Delete">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<form>
+							<input type="checkbox" name="include" value="include">
+						</form>
+					</td>
+					<td>Item #3</td>
+					<td>6</td>
+					<td>$2.00</td>
+					<td>$12.00</td>
+					<td>
+						<form>
+							<input type="submit" value="Edit">
+							<input type="submit" value="Delete">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<form>
+							<input type="checkbox" name="include" value="include">
+						</form>
+					</td>
+					<td>Item #4</td>
+					<td>4</td>
+					<td>$6.00</td>
+					<td>$24.00</td>
+					<td>
+						<form>
+							<input type="submit" value="Edit">
+							<input type="submit" value="Delete">
+						</form>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="total">
+			<p>Total</p>
+			<p>$55.00</p>
+		</div>
 	</div>
 </div>
 </body>
