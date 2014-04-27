@@ -1,12 +1,15 @@
-* {
+/* {
 	outline: red 1px solid;
-}
+}*/
 body {
 	background-color: black;
 }
 
 .title {
-	background-color: blue;
+	background: -webkit-linear-gradient(darkblue, cornflowerblue);
+	background: -moz-linear-gradient(darkblue, cornflowerblue);
+	background: -o-linear-gradient(darkblue, cornflowerblue);
+	background: linear-gradient(darkblue, cornflowerblue); 
 	margin: 10px;
 	height: 100px;
 	border-radius: 10px;
@@ -21,7 +24,10 @@ h1 {
 }
 
 .container {
-	background-color: navy;
+	background: -webkit-linear-gradient(darkblue, cornflowerblue);
+	background: -moz-linear-gradient(darkblue, cornflowerblue);
+	background: -o-linear-gradient(darkblue, cornflowerblue);
+	background: linear-gradient(darkblue, cornflowerblue); 
 	height: 500px;
 	margin: 10px;
 	border-radius: 10px;
@@ -36,25 +42,90 @@ h1 {
 
 .add-item {
 	height: 30%;
+	text-align: center;
+	line-height: 2;
+	font-size: 18px;
 }
 
-.item-details {
+.description {
+	width: 97%;
+	font-size: 18px;
+	font-family: serif;
+	text-align: center;
+}
+
+.number {
+	width: 20%;
+	font-size: 18px;
+	font-family: serif;
 	text-align: center;
 }
 
 .budget {
+	margin-top: 15px;
+	padding: 5%;
 	height: 30%;
+	line-height: 2;
+	text-align: center;
+}
+
+h2 {
+	color: white;
+	font-family: cursive;
+	font-size: 24px;
+	text-decoration: underline;
 }
 
 .messages {
 	height: 40%;
+	text-align: center;
+}
+
+.alert {
+	padding: 5%;
+	border-radius: 5px;
+	vertical-align: middle;
+}
+
+#error {
+	display: table-cell;
+	background-color: red;
+}
+
+#warning {
+	display: none;
+	background-color: yellow;
+	
+}
+
+#success {
+	display: none;
+	background-color: green;
+}
+
+.button {
+	margin-top: 10px;
+	font-size: 18px;
 }
 
 .table {
+	text-align: center;
 	width: 66%;
 	height: 97%;
 	float: left;
 	margin: 1%;
+}
+
+th {
+	padding: 5px;
+	background-color: steelblue;
+	border: 1px solid black;
+}
+
+td {
+	padding: 5px;
+	background-color: lightsteelblue;
+	border: 1px solid black;
 }
 
 .list {

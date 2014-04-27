@@ -15,50 +15,48 @@
 <div class="container">
 	<div class="form">
 		<div class="add-item">
-			<div class="input">
-				<form class="item-details">
-					<input class="description" type="text" name="Description" value="Description"><br>
-					Quantity: <input type="number" name="Quantity" step="any" min="0"><br>
-					Price: <input type="number" name="Price" step="any" min="0"><br>
-				</form>
-			</div>
-			<div class="submit">
-				<form>	
-					<input type="submit" value="Submit">
-				</form>
-			</div>
+			<form>
+				<input class="description" type="text" name="Description" value="Description"><br>
+				Quantity: <input class="number" type="number" name="Quantity" step="any" min="0"><br>
+				Price: <input class="number" type="number" name="Price" step="any" min="0"><br>
+				<input class="button" type="submit" value="Add Item">
+			</form>
 		</div>
 		<div class="budget">
-			<h2> Set a Budget for this Shopping Trip </h2>
+			<h2> Set a Budget</h2>
 			<form>
 				Budget: <input type="number" name="Budget" step="any" min="0">
-				<input type="submit" value="Submit">
+				<input class="button" type="submit" value="Set">
 			</form>
 		</div>
 
 		<div class="messages">
-			<div id="error">
+			<div class="alert" id="error">
 				<p>You have exceeded your budget!</p>
 			</div>
-			<div id="warning">
+			<div class="alert" id="warning">
 				<p>Want anything else? You have not yet met your budget.</p>
 				</div>
-			<div id="success">
+			<div class="alert" id="success">
 				<p>Excellent! Let's go shopping.</p>
 			</div>
-			<div id="task-list">Send to Task List</div>
+			<div>
+				<form>
+					<input class="button" type="submit" value="Send to Task List">
+				</form>
+			</div>
 		</div>
 	</div>
 	<div class="table">
 		<div class="list">
 			<table id="results">
 				<tr class="header">
-					<td>Include</td>
-					<td>Description</td>
-					<td>Quantity</td>
-					<td>Unit Price</td>
-					<td>Total</td>
-					<td>Controls</td>
+					<th>Include</th>
+					<th>Description</th>
+					<th>Quantity</th>
+					<th>Unit Price</th>
+					<th>Total</th>
+					<th>Controls</th>
 				</tr>
 				<tr>
 					<td>
@@ -131,8 +129,13 @@
 			</table>
 		</div>
 		<div class="total">
-			<p>Total</p>
-			<p>$55.00</p>
+			<div id="total">
+				<div>
+					<form>
+						Total:<input type="number" value="$55.00">
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
