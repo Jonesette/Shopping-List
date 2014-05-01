@@ -5,8 +5,8 @@
 	<title>Shopping List and Budget</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
-	<!--<script src="http://code.jquery.com/jquery.min.js"></script>
-	<script src="js/app.js"></script>-->
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/app.js"></script>
 </head>
 <body>
 <div class="title">
@@ -28,17 +28,16 @@
 				Budget: <input type="number" name="Budget" step="any" min="0">
 				<input class="button" type="submit" value="Set">
 			</form>
-		</div>
-
-		<div class="messages">
-			<div class="alert" id="error">
-				<p>You have exceeded your budget!</p>
-			</div>
-			<div class="alert" id="warning">
-				<p>Want anything else? You have not yet met your budget.</p>
+			<div class="messages">
+				<div class="alert" id="error">
+					<p>You have exceeded your budget!</p>
 				</div>
-			<div class="alert" id="success">
-				<p>Excellent! Let's go shopping.</p>
+				<div class="alert" id="warning">
+					<p>Want anything else? You have not yet met your budget.</p>
+				</div>
+				<div class="alert" id="success">
+					<p>Excellent! Let's go shopping.</p>
+				</div>
 			</div>
 			<div>
 				<form>
