@@ -35,13 +35,11 @@ h1 {
 }
 
 .form {
-	width: 100%;
-	height: 97%;
 	margin: 1%;
 }
 
 .add-item {
-	width: 48%;
+	padding-top: 12px;
 	text-align: center;
 	line-height: 2;
 	font-size: 18px;
@@ -64,11 +62,14 @@ h1 {
 
 .budget {
 	margin-top: 2px;
-	width: 48%;
-	padding: 1%;
-	line-height: 2;
+	font-size: 18px;
+	line-height: 1.2;
 	text-align: center;
 	color: white;
+}
+
+#set-budget {
+	padding-bottom: 12px;
 }
 
 h2 {
@@ -87,7 +88,7 @@ h2 {
 	padding: 1%;
 	vertical-align: middle;
 	color: black;
-	padding: auto;
+	font-size: 14px;
 }
 
 #error {
@@ -112,7 +113,10 @@ h2 {
 }
 
 .table {
+	margin-left: auto;
+	margin-right: auto:;
 	text-align: center;
+	padding-top: 12px;
 }
 
 th {
@@ -120,6 +124,7 @@ th {
 	background-color: steelblue;
 	border: 1px solid black;
 	width: 15%;
+	text-align: center;
 }
 
 td {
@@ -128,10 +133,13 @@ td {
 	border: 1px solid black;
 	width: 15%;
 	vertical-align: middle;
+	text-align: center;
 }
 
 .list {
+
 }
 
 .total {
+	padding-top: 12px;
 }
