@@ -28,8 +28,9 @@ h1 {
 	background: -moz-linear-gradient(darkblue, cornflowerblue);
 	background: -o-linear-gradient(darkblue, cornflowerblue);
 	background: linear-gradient(darkblue, cornflowerblue); 
-	height: 500px;
-	margin: 10px;
+	height: auto;
+	width: auto;
+	padding-bottom: 12px;
 	border-radius: 10px;
 }
 
