@@ -35,7 +35,11 @@ $(document).ready(function() {
 		// Show Table
 		$('.table').show();
 		// Append to Table
-		$('#results tbody').append('<tr><td>'+description+'</td><td>'+quantity+'</td><td>'+'$ '+price+'</td><td>'+'$ '+itemtotal+'</td><td class="delete"><form><input type="submit" value="Delete"></form></td></tr>');
+		$('#results tbody').append('<tr class="item"><td>'+description+'</td><td>'+quantity+'</td><td>'+'$ '+price+'</td><td>'+'$ '+itemtotal+'</td><td class="controls"><form><input class="delete" type="button" value="Delete-Item"></form></td></tr>');
 	});
 
+	// Add Delete Item Function
+	$('.table').on('click', '.delete', function() {
+		$(this).closest('tr').remove();
+	});
 });
