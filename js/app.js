@@ -4,6 +4,13 @@ $(document).ready(function() {
 	var quantity = "0";
 	var price = "0";
 
+	//Disable Enter to submit form.
+	$( 'form' ).bind('keypress', function(e){
+   		if ( e.keyCode == 13 ) {
+   			return false;
+   		}
+ 	});
+
 	//Clear Description on click
 	$('.description').one('focus', function() {
 		this.value = '';
